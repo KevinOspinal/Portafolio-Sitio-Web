@@ -1,0 +1,339 @@
+/* barra de navegacion */
+
+.navbar{
+    padding: 2rem;
+    background-color: #251B37;
+}
+.navbar-collapse{
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-link{
+    color: white;
+    margin-right: 18px;
+}
+
+/*Adaptable resonsive */
+@media screen and (max-width: 767px){
+    .navbar-brand{
+        display: none;
+    }
+}
+ /*posicion de la imagen monitor y logos*/
+@media screen and (min-width:400px){
+    .overlay p{
+        font-size: 18px;
+    }
+    .overlay i{
+        font-size: 8px;
+    }
+}
+
+@media screen and (max-width:767px){
+    .navbar-brand{
+        display: none;
+    }
+}
+
+/*estilos generales*/
+
+.iconos{
+    position: absolute; 
+    left: 30%;
+}
+.btn-info{
+    font-size: 1.1rem;
+    margin: 20px;
+}
+
+li{
+    margin-left: 5px;
+    color: white;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    font-size: 2.5rem;
+    color: white;
+    font-family: 'Piedra', cursive;
+}
+.hero-principal h2{
+    color: white;
+    font-size: 1.5rem;
+}
+.seccion-oscura{
+    color:black;
+    background-color: #cad4ff;
+}
+
+.seccion-titulo{
+    font-size: 2rem;
+    padding: 15px 0;
+    font-family: 'Piedra', cursive;
+}
+.seccion-descripcion{
+    font-size: 1.2rem;
+    color: #4b415f;
+}
+
+.seccion-texto{
+    font-size: 1.2rem;
+}
+
+.seccion.clara{
+    color:black;
+    background-color: #FFECEF;
+}
+
+/*sobre mi*/
+.sobre-mi{
+    height: 500px;
+    padding: 100px;
+}
+.sobre-mi .contenedor{
+    max-width: 600px;
+    text-align: center;
+
+}
+/*contacto*/
+
+.contacto .container{
+    max-width: 1010px;
+    min-height: 200px;
+    padding: 20px;
+}
+
+.contacto .rectangulo{
+    margin-top: -5rem;
+    color: white;
+    border-radius: 20px;
+    background-color: #3b2564;
+    box-shadow: 0px 1px 4px 1px;
+}
+
+.contacto .row{
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+}
+
+.contacto .description{
+    color: white;
+    font-size: 1.2rem;
+}
+
+.contacto button{
+    color: white;
+    font-weight: bold;
+    background-color: transparent;
+    border: 3px solid white;
+    padding:  1.25rem 2em;
+    margin: 10px;
+    border-radius: 100px;
+    transition: all 0.2s ease-in-out;
+}
+
+.contacto button:hover{
+    background: white;
+    color: black;
+}
+
+
+.contacto button i {
+    color: white;
+    font-size: 1.3rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.contacto button i{
+    color:white;
+}
+
+/* EXPERIENCIA*/
+
+.experiencia{
+    padding: 40px 40px 60px 40px;
+}
+
+.experiencia .columna{
+    padding: 20px;
+    border: 4px solid #4b415f;
+    border-radius: 13px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    transition: all 0.2s ease-in;
+}
+.experiencia .columna:hover{
+    color: white;
+    background-color: #251B37;
+}
+
+.experiencia .columna:hover i{
+    background-color: white;
+    color: black;
+}
+
+/*//////////////////////////////*/
+
+.experiencia i{
+    font-size: 2.5rem;
+    color: #FFCACA;
+    background-color: #251B37;
+    padding: 8px 19px;
+    border-radius: 50%;
+}
+
+.experiencia-titulo{
+    font-size: 25px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.badges-contenedor{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.badges{
+    margin: 5px;
+}
+
+/*PROYECTOS*/
+
+.proyectos-recientes{
+    padding: 40px;
+}
+.texto-negro{
+    color: black;
+ }
+
+.texto-blaco{
+    color: white;
+}
+.proyectos-recientes img{
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    display: block;
+    transition: all 0.2 ease;
+}
+.proyectos-contenedor{
+    padding-top: 60px;
+    margin-bottom: 40px;
+}
+
+.overlay{
+    transition: all 0.2s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.proyecto{
+    position: relative;
+}
+.overlay .iconos-contenedor{
+    display: flex;
+}
+.overlay i{
+    color:black;
+    font-size: 60px;
+    margin: 10px;
+}
+
+.overlay p{
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+.proyecto:hover img{
+    opacity: 0.2;
+}
+
+.proyecto:hover .overlay{
+    opacity: 1;
+}
+
+/*Pie de pagina (foooter)*/
+
+.footer{
+    min-height: 600px;
+
+}
+.footer-logo{
+    height: 80px;
+    width: 80px;
+    margin: 10px;
+}
+
+.footer-text{
+    font-size: 1.5rem;
+    padding: 20px;
+    margin-bottom: 30px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.iconos-redes-sociales a{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    margin: 10px;
+    border: 2px solid rgb(8, 8, 8);
+    border-radius: 50%;
+    transition: all 0.2s ease-in;
+}
+
+.iconos-redes-sociales i {
+    color: rgb(8, 8, 8);
+    font-size: 1.5rem;
+    transition: all 0.2s ease-in;
+}
+
+.iconos-redes-sociales a:hover{
+    background-color: black;
+    border: 2px solid #4b415f;
+
+}
+.iconos-redes-sociales a:hover i{
+    color: white;
+}
+
+.derechos-de-autor{
+    font-size: 15px;
+    color: black;
+    padding: 20px;
+}
+
+
+
+/* seccion hero */
+
+.hero{
+    background-color: #372948;
+    min-height: 450px;
+    text-align: center;
+}
+.hero-principal{
+    padding: 3rem;
+}
+
+.hero-imagen-desarrollador{
+    width: 150px; 
+    height: 150px;
+}
