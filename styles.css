@@ -265,7 +265,9 @@ h1{
 }
 
 /*PROYECTOS*/
-
+.proyectos-recientes a {
+    text-align: center;
+  }
 .proyectos-recientes{
     padding: 40px;
 }
